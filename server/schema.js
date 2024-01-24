@@ -80,5 +80,66 @@ const RootQuery = new GraphQLObjectType({
     },
   });
   
-  // ... (remaining code)
+ // ... (previous code)
+
+const RootQuery = new GraphQLObjectType({
+    name: 'RootQueryType',
+    fields: {
+      // ... (previous queries)
+      cart: {
+        type: CartType,
+        args: { userId: { type: GraphQLID } },
+        resolve(parent, args) {
+          // Logic to retrieve a user's shopping cart
+          return Cart.findOne({ userId: args.userId });
+        },
+      },
+      // Add more queries as needed
+    },
+  });
+  
+  const Mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+      // ... (previous mutations)
+      addToCart: {
+        type: CartType,
+        args: { userId: { type: GraphQLID }, productId: { type: GraphQLID } },
+        resolve(parent, args) {
+          // Logic to add a product to the user's shopping cart
+          return Cart.findOneAndUpdate(
+            { userId: args.userId },
+            { $addToSet: { products: args.productId } },
+            { upsert: true, new: true }
+          );
+        },
+      },
+      // Add more mutations as needed
+    },
+  });
+  
+// ... (previous code)
+
+const Mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+      // ... (previous mutations)
+      checkout: {
+        type: OrderType,
+        args: { userId: { type: GraphQLID } },
+        resolve(parent, args) {
+          // Logic to process the checkout and create an order
+          return Order.create({ userId: args.userId, products: [], total: 0 });
+        },
+      },
+      // Add more mutations as needed
+    },
+  });
+  
+  module.exports = new GraphQLSchema({
+    query: RootQuery,
+    mutation: Mutation,
+  });
+  
+  
   

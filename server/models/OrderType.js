@@ -1,4 +1,4 @@
-const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLList, GraphQLFloat } = require('graphql');
+const { GraphQLObjectType, GraphQLID, GraphQLList, GraphQLFloat } = require('graphql');
 
 const OrderType = new GraphQLObjectType({
   name: 'Order',
@@ -12,3 +12,4 @@ const OrderType = new GraphQLObjectType({
 });
 
 module.exports = OrderType;
+
