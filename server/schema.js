@@ -4,8 +4,8 @@ const { UserType, ProductType, OrderType } = require('./models'); // Import your
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
-    // Define your queries here
-    // For example:
+    // Define future queries here
+    // Example:
     // user: {
     //   type: UserType,
     //   args: { id: { type: GraphQLID } },
@@ -19,8 +19,8 @@ const RootQuery = new GraphQLObjectType({
 const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
-    // Define your mutations here
-    // For example:
+    // Define mutations here
+    // example:
     // addUser: {
     //   type: UserType,
     //   args: { name: { type: GraphQLString }, email: { type: GraphQLString } },
@@ -35,7 +35,6 @@ module.exports = new GraphQLSchema({
   query: RootQuery,
   mutation: Mutation,
 });
-// ... (previous code)
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
@@ -79,8 +78,6 @@ const RootQuery = new GraphQLObjectType({
       // Add more mutations as needed
     },
   });
-  
- // ... (previous code)
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
@@ -117,8 +114,6 @@ const RootQuery = new GraphQLObjectType({
       // Add more mutations as needed
     },
   });
-  
-// ... (previous code)
 
 const Mutation = new GraphQLObjectType({
     name: 'Mutation',
