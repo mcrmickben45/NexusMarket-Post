@@ -1,11 +1,11 @@
 const { GraphQLObjectType, GraphQLID, GraphQLList, GraphQLFloat } = require('graphql');
 
 const OrderType = new GraphQLObjectType({
-  name: 'Order',
+  name: 'OrderType',
   fields: () => ({
     id: { type: GraphQLID },
     userId: { type: GraphQLID },
-    products: { type: GraphQLList(GraphQLID) },
+    products: { type: new GraphQLList(ProductType) },
     total: { type: GraphQLFloat },
     // Add more fields as needed
   }),

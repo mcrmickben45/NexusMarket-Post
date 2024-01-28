@@ -1,7 +1,7 @@
 const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLFloat } = require('graphql');
 
 const ProductType = new GraphQLObjectType({
-  name: 'Product',
+  name: 'ProductType',
   fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },

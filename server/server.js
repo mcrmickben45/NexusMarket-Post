@@ -4,21 +4,26 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const schema = require('./schema');
-const User = require('./models/User'); // Import the User model
+const User = require('./models/User');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect('your-mongodb-uri', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());
 
 app.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
-  // Hash the password before saving it to the database
   const hashedPassword = await bcrypt.hash(password, 10);
 
   try {
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ error: 'Email already in use' });
+    }
+
     const user = await User.create({ name, email, password: hashedPassword });
     res.status(201).json({ user });
   } catch (error) {
@@ -41,9 +46,7 @@ app.post('/login', async (req, res) => {
       return res.status(401).json({ error: 'Invalid password' });
     }
 
-    // Generate a JWT token for authentication
-    const token = jwt.sign({ userId: user._id }, 'your-secret-key', { expiresIn: '1h' });
-
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
     res.status(200).json({ token });
   } catch (error) {
     console.error(error);
