@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLList } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString, GraphQLFloat } = require('graphql');
 const { UserType, ProductType, OrderType, CartType } = require('./models/graphqlTypes');
 
 // Import Mongoose models
@@ -30,7 +30,7 @@ const RootQuery = new GraphQLObjectType({
         return Cart.findOne({ userId: args.userId });
       },
     },
-    // Add more queries as needed
+    // ... other queries as needed
   },
 });
 
@@ -45,7 +45,7 @@ const Mutation = new GraphQLObjectType({
         password: { type: GraphQLString },
       },
       resolve(parent, args) {
-        // Note: Implement password hashing here before saving
+        // Remember to implement password hashing before saving
         return User.create(args);
       },
     },
@@ -78,11 +78,11 @@ const Mutation = new GraphQLObjectType({
       type: OrderType,
       args: { userId: { type: GraphQLID } },
       resolve(parent, args) {
-        // Simplified checkout logic
+        // Implement checkout logic here
         return Order.create({ userId: args.userId, products: [], total: 0 });
       },
     },
-    // Add more mutations as needed
+    // ... other mutations as needed
   },
 });
 
