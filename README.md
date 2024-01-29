@@ -102,3 +102,6 @@ Cuitlahuac Hernandez
 ## Credit
 
 This NexusMarket Post project was created by Ahmed Danawi, Amninder Singh, Ben McCormick, and Cuitlahuac Hernandez under guidelines provided by the UC Berkeley Extension BootcampSpot. 
+
+## License
+None
