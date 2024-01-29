@@ -33,8 +33,20 @@ const products = [
   // Add more products as needed
 ];
 
-// API endpoint for fetching products
-app.get('/api/products', (req, res) => {
+// Middleware for JWT authentication
+const authenticateJWT = (req, res, next) => {
+  const token = req.header('Authorization');
+  if (!token) return res.status(401).json({ error: 'Unauthorized' });
+
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) return res.status(403).json({ error: 'Forbidden' });
+    req.user = user;
+    next();
+  });
+};
+
+// API endpoint for fetching products, protected by JWT authentication
+app.get('/api/products', authenticateJWT, (req, res) => {
   res.json(products);
 });
 
@@ -78,7 +90,7 @@ app.post('/login', async (req, res) => {
   }
 });
 
-app.use('/graphql', graphqlHTTP({
+app.use('/graphql', authenticateJWT, graphqlHTTP({
   schema,
   graphiql: true,
 }));
@@ -87,11 +99,10 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // Replace <password> with your actual password
-const password = "your_actual_password";
+const password = process.env.MONGO_PASSWORD; // Use the environment variable for MongoDB password
 const uri = `mongodb+srv://mccormickben45:${password}@nexusmarketpost.rgrym05.mongodb.net/`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
