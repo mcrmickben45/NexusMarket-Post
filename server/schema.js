@@ -1,4 +1,4 @@
-const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString, GraphQLFloat } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString, GraphQLFloat, GraphQLList } = require('graphql');
 const { UserType, ProductType, OrderType, CartType } = require('./models/graphqlTypes');
 
 // Import Mongoose models
@@ -18,7 +18,7 @@ const RootQuery = new GraphQLObjectType({
       },
     },
     products: {
-      type: new GraphQLList(ProductType),
+      type: GraphQLList(ProductType),
       resolve() {
         return Product.find();
       },
