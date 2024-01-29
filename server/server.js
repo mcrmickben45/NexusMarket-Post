@@ -14,6 +14,30 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 app.use(express.json());
 
+// Sample product data
+const products = [
+  {
+    id: 1,
+    title: 'Product 1',
+    description: 'Description for Product 1.',
+    price: 19.99,
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    id: 2,
+    title: 'Product 2',
+    description: 'Description for Product 2.',
+    price: 29.99,
+    image: 'https://via.placeholder.com/150',
+  },
+  // Add more products as needed
+];
+
+// API endpoint for fetching products
+app.get('/api/products', (req, res) => {
+  res.json(products);
+});
+
 app.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
