@@ -38,12 +38,18 @@ body {
 }
 
 .product {
+    cursor: pointer;
     width: 300px;
     margin: 20px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
 }
 
 .product img {
