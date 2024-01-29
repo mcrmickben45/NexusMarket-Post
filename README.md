@@ -6,14 +6,36 @@ NexusMarket Post is an innovative e-commerce platform that offers an intuitive a
 
 ## Table of Contents
 
-- [User-Story] (#user-story)
-- [Introduction](#introduction)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Credits](#credits)
-- [Website](#website)
-- [Presentation] (#presentation)
+- [User-Story](#User-Story)
+- [Technical-Details](#Technical-Details)
+- [Deployed-Link](#Deployed-Link)
+- [Client-View](#Client-View)
+- [Signup](#Joining-NexusMarket-Post)
+- [Prerequisites](#User-Prerequisites)
+- [Installation](#Installation)
+- [Deployment](#Deployment)
+- [Configuration](#Built-Using)
+- [Presentation](#Presentation)
+- [Authors](#Authors)
+- [Credit](#Credit)
 - [License](#license)
+
+# User Story
+
+// As an avid online shopper, I want to explore and purchase products effortlessly on a new, innovative e-commerce platform. 
+
+// I want an intuitive and visually appealing interface that allows me to browse through diverse product categories seamlessly.
+
+// Upon finding a product, I want to access further details,, including product descriptions, pricing, and high-quality images. 
+
+// I want to be able to easily be able to add products to my cart with a simple and user-friendly interface. 
+
+// Additionally, I want to be able to review/edit my cart and then proceed to a smooth and secure checkout process, which supports various forms of payment options.
+
+// I want the application to have a responsive UI, so that I can also shop mobily. 
+
+// Lastly, I want to be able to finish my online shopping knowing the platform ensures secure transitions and protects my sensitive data.
+
 
 ## Technical Details
 
@@ -77,3 +99,6 @@ https://www.linkedin.com/in/benmcrmick/ || https://github.com/mcrmickben45
 
 Cuitlahuac Hernandez
 
+## Credit
+
+This NexusMarket Post project was created by Ahmed Danawi, Amninder Singh, Ben McCormick, and Cuitlahuac Hernandez under guidelines provided by the UC Berkeley Extension BootcampSpot. 
