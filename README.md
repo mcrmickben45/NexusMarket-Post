@@ -34,9 +34,9 @@ The following instructions will provide you with a copy of the current up and ru
 
 ### User Prerequisites
 
--- Node.js
--- MongoDB
--- Heroku (or preferred webhosting service)
+* Node.js
+* MongoDB
+* Heroku (or preferred webhosting service)
 
 ## Installation
 
@@ -54,13 +54,13 @@ The following instructions will provide you with a copy of the current up and ru
 
 ### Built Using
 
--- React
--- Mongoose
--- JWT/JWT Decode
--- GitHub
--- JavaScript
--- HTML
--- CSS
+* React
+* Mongoose
+* JWT Decode
+* GitHub
+* JavaScript
+* HTML
+* CSS
 
 ## Presentation
 
