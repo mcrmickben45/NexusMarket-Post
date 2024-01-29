@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+## NexusMarket Post
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NexusMarket Post is an innovative e-commerce platform that offers an intuitive and visually appealing interface, allowing users to effortlessly explore a diverse range of products. With a seamless and secure checkout process, dynamic product updates, and a commitment to responsive design, NexusMarket Post redefines online shopping, prioritizing user satisfaction and convenience.
 
-## Available Scripts
+! ** Add Image of Final Version ** !
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [User-Story] (#user-story)
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Credits](#credits)
+- [Website](#website)
+- [Presentation] (#presentation)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technical Details
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+NexusMarket Post is a MERN-stack single-page application that combines the power of a dynamic web store with a robust MongoDB backend server. Built with technologies including React, Node.js, Express.js, and JWT authentication. NexusMarket Post offers a compelling user experience and efficient management for both buyers and sellers.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployed Link
 
-### `npm run build`
+https://mcrmickben45.github.io/NexusMarket-Post/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Client View
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+! ** Add Images of Product/Shopping/Cart/Checkout ** !
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Joining NexusMarket Post
 
-### `npm run eject`
+The following instructions will provide you with a copy of the current up and running version of the project for the purpose of deployment and testing. This is a non-active e-commerce platform. See deployment notes on how to run the application on your system. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### User Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-- Node.js
+-- MongoDB
+-- Heroku (or preferred webhosting service)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone Repository.
+2. Navigate to 'nexusmarket-post' directory in terminal.
+3. Run 'npm install' dependencies.
+4. Run program locally by running 'npm run develop'.
+5. Open htt://localhost:3000/ in browser.
+6. Browse, shop, sign up. 
 
-## Learn More
+## Deployment
+1. Generate optimized build using npm run build.
+2. Upload to Heroku.
+3. Attach MongoDB hosting service.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built Using
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-- React
+-- Mongoose
+-- JWT/JWT Decode
+-- GitHub
+-- JavaScript
+-- HTML
+-- CSS
 
-### Code Splitting
+## Presentation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://docs.google.com/presentation/d/14nPSuHOjVcY4IFBNx2wQGrbwk_QAdH5UatBlcez6beo/edit?usp=sharing
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ahmed Danawi
 
-### Making a Progressive Web App
+Amninder Singh
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Ben McCormick
+https://www.linkedin.com/in/benmcrmick/ || https://github.com/mcrmickben45
 
-### Advanced Configuration
+Cuitlahuac Hernandez
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
