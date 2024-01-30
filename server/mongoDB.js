@@ -3,6 +3,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 // Replace <password> with your actual password
 const password = process.env.MONGO_PASSWORD;
 const uri = `mongodb+srv://mccormickben45:${password}@nexusmarketpost.rgrym05.mongodb.net/`;
+const mongodbUriCollaborator1 = 'mongodb+srv://aqtagon:LUGcWvgVv1oZ1GdB@atlascluster.ciopdlq.mongodb.net/?retryWrites=true&w=majority';
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -12,6 +13,20 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+
+// Choose the MongoDB URI based on some condition or configuration
+let chosenMongoDBUri;
+
+if (/* some condition */) {
+    chosenMongoDBUri = mongodbUriCollaborator1;
+} else if (/* some other condition */) {
+    chosenMongoDBUri = mongodbUriCollaborator2;
+} else {
+    chosenMongoDBUri = mongodbUri; // Use the default URI
+}
+
+// Use chosenMongoDBUri in your MongoDB connection logic
+
 
 async function run() {
   try {
@@ -29,3 +44,6 @@ async function run() {
 run().catch(console.dir);
 
 module.exports = client;
+
+
+  
