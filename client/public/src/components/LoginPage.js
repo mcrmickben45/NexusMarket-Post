@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { UserContext } from '../context/UserContext'; // Adjust this path as needed
+import { UserContext } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
@@ -15,7 +15,7 @@ const LoginPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/api/login', {  // Replace with your API endpoint
+            const response = await fetch('http://localhost:8080/api/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(credentials),

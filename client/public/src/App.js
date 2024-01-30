@@ -4,7 +4,7 @@ import { UserProvider } from './context/UserContext';
 import logo from './logo.svg';
 import './App.css';
 import UserDashboard from './components/UserDashboard';
-import ProfilePage from './components/ProfilePage';
+import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
 
 function App() {
@@ -14,14 +14,14 @@ function App() {
         <div className="App">
           <nav>
             <Link to="/dashboard">Dashboard</Link>
-            <Link to="/profile">Profile</Link>
+            <Link to="/login">Login</Link>
             <Link to="/signup">Sign Up</Link>
             <Link to="/">Home</Link>
           </nav>
 
           <Routes>
             <Route path="/dashboard" element={<UserDashboard />} />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
             <Route path="/" element={
               <header className="App-header">
