@@ -10,7 +10,8 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-mongoose.connect('mongodb+srv://mccormickben45:LUGcWvgVv1oZ1GdB@nexusmarketpost.rgrym05.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://mccormickben45:LUGcWvgVv1oZ1GdB@nexusmarketpost.rgrym05.mongodb.net/', {
+  });
 
 
 app.use(express.json());
