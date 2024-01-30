@@ -39,7 +39,7 @@ NexusMarket Post is an innovative e-commerce platform that offers an intuitive a
 
 ## Technical Details
 
-NexusMarket Post is a MERN-stack single-page application that combines the power of a dynamic web store with a robust MongoDB backend server. Built with technologies including React, Node.js, Express.js, and JWT authentication. NexusMarket Post offers a compelling user experience and efficient management for both buyers and sellers.
+NexusMarket Post is a MERN-stack single-page application that combines the power of a dynamic web store with a robust MongoDB backend server. Built with technologies including React, Node.js, Express.js, JWT authentication, and Render. NexusMarket Post offers a compelling user experience and efficient management for both buyers and sellers.
 
 
 ## Deployed Link
@@ -83,6 +83,11 @@ The following instructions will provide you with a copy of the current up and ru
 * JavaScript
 * HTML
 * CSS
+* Render
+  
+<img width="1436" alt="Screen Shot 2024-01-30 at 12 31 19 PM" src="https://github.com/mcrmickben45/NexusMarket-Post/assets/137113252/af9972cc-844e-4575-8f16-15dd3ba5d5b2">
+<img width="1247" alt="Screen Shot 2024-01-30 at 11 33 14 AM" src="https://github.com/mcrmickben45/NexusMarket-Post/assets/137113252/1f0a77d3-83b3-48d0-8d91-fec3fabeea72">
+<img width="995" alt="Screen Shot 2024-01-30 at 12 24 58 PM" src="https://github.com/mcrmickben45/NexusMarket-Post/assets/137113252/df3186e3-01a3-43bc-9366-7f90ff2c0ca2">
 
 ## Presentation
 
