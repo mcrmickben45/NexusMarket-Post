@@ -96,6 +96,7 @@ https://docs.google.com/presentation/d/14nPSuHOjVcY4IFBNx2wQGrbwk_QAdH5UatBlcez6
 ## Authors
 
 Ahmed Danawi
+https://www.linkedin.com/in/ahmed-danawi-832052126/ || https://github.com/aqtagon
 
 Amninder Singh
 
