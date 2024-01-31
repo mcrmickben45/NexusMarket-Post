@@ -13,7 +13,7 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // Add other fields as needed
+  
 });
 
 const Product = mongoose.model('Product', productSchema);

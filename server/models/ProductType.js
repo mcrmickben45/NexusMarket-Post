@@ -7,7 +7,7 @@ const ProductType = new GraphQLObjectType({
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     price: { type: GraphQLFloat },
-    // Add more fields as needed
+    
   }),
 });
 

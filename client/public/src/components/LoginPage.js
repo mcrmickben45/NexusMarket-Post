@@ -23,8 +23,8 @@ const LoginPage = () => {
 
             if (response.ok) {
                 const user = await response.json();
-                setUser(user);  // Update user context
-                navigate('/dashboard');  // Redirect to dashboard
+                setUser(user);  
+                navigate('/dashboard');  
             } else {
                 alert('Login failed. Please check your username and password.');
             }

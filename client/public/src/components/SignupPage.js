@@ -20,8 +20,8 @@ const SignupPage = () => {
             });
 
             if (response.ok) {
-                // Handle successful registration here
-                navigate('/login'); // Redirect to login page
+                
+                navigate('/login'); 
             } else {
                 alert('Failed to register. Please try again.');
             }

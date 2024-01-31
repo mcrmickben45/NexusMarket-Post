@@ -9,7 +9,7 @@ import SignupPage from './components/SignupPage';
 
 function App() {
   return (
-    <UserProvider> {/* Wrap your Router with UserProvider */}
+    <UserProvider> {}
       <Router>
         <div className="App">
           <nav>

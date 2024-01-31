@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://mccormickben45:LUGcWvgVv1oZ1GdB@nexusmarketpost.
 
 app.use(express.json());
 
-// Sample product data
+
 const products = [
   {
     id: 1,
@@ -32,7 +32,7 @@ const products = [
     price: 29.99,
     image: 'https://via.placeholder.com/150',
   },
-  // Add more products as needed
+  
 ];
 
 // Middleware for JWT authentication
@@ -103,11 +103,11 @@ app.listen(PORT, () => {
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-// Replace <password> with your actual password
-const password = process.env.MONGO_PASSWORD; // Use the environment variable for MongoDB password
+
+const password = process.env.MONGO_PASSWORD; 
 const uri = `mongodb+srv://mccormickben45:${password}@nexusmarketpost.rgrym05.mongodb.net/`;
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -118,9 +118,9 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    // Connect the client to the server	(optional starting in v4.7)
+    
     await client.connect();
-    // Send a ping to confirm a successful connection
+    
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {

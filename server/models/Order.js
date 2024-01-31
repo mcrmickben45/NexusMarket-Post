@@ -14,7 +14,7 @@ const orderSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // Add other fields as needed
+  
 });
 
 const Order = mongoose.model('Order', orderSchema);

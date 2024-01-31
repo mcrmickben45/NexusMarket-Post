@@ -7,7 +7,7 @@ const OrderType = new GraphQLObjectType({
     userId: { type: GraphQLID },
     products: { type: new GraphQLList(ProductType) },
     total: { type: GraphQLFloat },
-    // Add more fields as needed
+    
   }),
 });
 

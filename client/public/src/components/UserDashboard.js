@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../context/UserContext'; // Adjust this path based on your project structure
+import { UserContext } from '../context/UserContext'; 
 
 const UserDashboard = () => {
     const { user } = useContext(UserContext);
 
-    // Mock data for user activities or orders
+    
     const userActivities = [
         { id: 1, activity: "Ordered a new laptop" },
         { id: 2, activity: "Updated profile information" },
-        // Add more mock activities as needed
+        
     ];
 
     return (

@@ -10,7 +10,7 @@ const cartSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Product',
   }],
-  // Add other fields as needed
+  
 });
 
 const Cart = mongoose.model('Cart', cartSchema);

@@ -12,7 +12,7 @@ const UserType = new GraphQLObjectType({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
     email: { type: GraphQLString },
-    // ... other user fields
+   
   }),
 });
 
@@ -23,7 +23,7 @@ const ProductType = new GraphQLObjectType({
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     price: { type: GraphQLFloat },
-    // ... other product fields
+   
   }),
 });
 
@@ -34,7 +34,7 @@ const OrderType = new GraphQLObjectType({
     userId: { type: GraphQLID },
     products: { type: new GraphQLList(GraphQLID) },
     total: { type: GraphQLFloat },
-    // ... other order fields
+    
   }),
 });
 
@@ -43,7 +43,7 @@ const CartType = new GraphQLObjectType({
   fields: () => ({
     userId: { type: GraphQLID },
     products: { type: new GraphQLList(GraphQLID) },
-    // ... other cart fields
+    
   }),
 });
 
